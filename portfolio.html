@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  
+</head>
+<body>
+    
+<br></br>
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">HOME</a>
+  <a href="#product">PRODUCT</a>
+  <a href="#gallery">GALLERY</a>
+  <a href="blog.html">BLOG</a>
+  <a href="#inventory">INVENTORY</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+<div class="row">
+  <div class="column" style="background-color: white;">
+    <img src="./images/icondev.jpeg" width="150px" height="150px"></div>
+<br>
+  <div class="articles" id="welcomeMessage"></div>
+  <div class="title_articles" id="welcomeMessage1"></div>
+    <button class="button button1" onclick="getElementById('hidden-div').style.display = 'block'">Edit</button>
+    <button class="button resume">Resume</button></div>
+ 
+    
+    <br>
+    
+   <div class="title2_article"></div>
+       <label for="lname">Availability</label>
+        <div class="title3_article" id="welcomeMessage2"></div>
+    <div class="title2_article"></div>
+        <label for="lname">Usia</label> 
+        <div class="title3_article" id="welcomeMessage3"></div>
+    <div class="title2_article"></div>
+        <label for="lname">Lokasi</label> 
+        <div class="title3_article" id="welcomeMessage4"></div>
+    <div class="title2_article"></div>
+        <label for="lname">Years Experience</label> 
+        <div class="title3_article" id="welcomeMessage5"></div>
+    <div class="title2_article"></div>
+        <label for="lname">Email</label> 
+        <div class="title3_article" id="welcomeMessage6"></div>   
+</div>
+
+   <br><br>
+   <div class="container" id="hidden-div" >
+   <div class="row">
+    <div class="col-25">
+      <label for="fname">Nama</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="message" name="nama" placeholder="Nama Anda">
+    </div>
+    </div> 
+    <div class="row">
+    <div class="col-25">
+      <label for="lname">Role</label>
+      </div>
+    <div class="col-75">
+      <input type="text" id="message1" name="role" placeholder="Front End Developer">
+      </div>
+      </div>    
+    <div class="row">
+    <div class="col-25">
+        <label for="lname">Availability</label>
+        </div>
+        <div class="col-75">
+        <input type="text" id="message2" name="availability" placeholder="Full Time">
+        </div>
+    <div class="row">
+        <div class="col-25">
+        <label for="lname">Usia</label>
+        </div>
+        <div class="col-75">
+        <input type="text" id="message3" name="usia" placeholder="19">
+        </div>
+    <div class="row">
+        <div class="col-25">
+        <label for="lname">Lokasi</label>
+        </div>
+        <div class="col-75">
+        <input type="text" id="message4" name="lokasi" placeholder="Jakarta">
+        </div>
+    <div class="row">
+        <div class="col-25">
+        <label for="lname">Years Experience</label>
+        </div>
+        <div class="col-75">
+        <input type="text" id="message5" name="yearsexperience" placeholder="2">
+        </div>
+    <div class="row">
+        <div class="col-25">
+        <label for="lname">Email</label>
+        </div>
+        <div class="col-75">
+        <input type="text" id="message6" name="email" placeholder="email@gmail.com">
+        </div>
+    </div>
+   
+    <br>
+    <div class="row">
+        <input type="submit" onclick="saveMessage()" value="Submit" id="submission">
+  
+
+   <script>
+
+       
+       var inputMessage = document.getElementById("message")
+       var welcomeMessage = document.getElementById("welcomeMessage")
+
+       var inputMessage1 = document.getElementById("message1")
+       var welcomeMessage1 = document.getElementById("welcomeMessage1")
+
+       var inputMessage2 = document.getElementById("message2")
+       var welcomeMessage2 = document.getElementById("welcomeMessage2")
+
+       var inputMessage3 = document.getElementById("message3")
+       var welcomeMessage3 = document.getElementById("welcomeMessage3")
+
+       var inputMessage4 = document.getElementById("message4")
+       var welcomeMessage4 = document.getElementById("welcomeMessage4")
+
+       var inputMessage5 = document.getElementById("message5")
+       var welcomeMessage5 = document.getElementById("welcomeMessage5")
+
+       var inputMessage6 = document.getElementById("message6")
+       var welcomeMessage6 = document.getElementById("welcomeMessage6")
+
+
+
+       function saveMessage() {
+           welcomeMessage.innerHTML = inputMessage.value;
+           welcomeMessage1.innerHTML = inputMessage1.value;
+           welcomeMessage2.innerHTML = inputMessage2.value;
+           welcomeMessage3.innerHTML = inputMessage3.value;
+           welcomeMessage4.innerHTML = inputMessage4.value;
+           welcomeMessage5.innerHTML = inputMessage5.value;
+           welcomeMessage6.innerHTML = inputMessage6.value;
+       }
+
+
+   </script>
+            
+
+    
+        
+</body>
+</html>
